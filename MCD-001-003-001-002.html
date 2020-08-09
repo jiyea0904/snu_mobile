@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>:: mySNU ::</title>
+<link rel="stylesheet" type="text/css" href="css/popup.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/sub.js"></script>
+</head>
+<body class="popup">
+	<h2>공간선택</h2>
+	<div class="popup_wrap">
+		<div class="contentswrap board">
+			<table cellpadding="0" cellspacing="0">
+				<colgroup>
+					<col width="25%" />
+					<col width="75%" />
+				</colgroup>
+				<tbody>
+					<tr>
+						<th class="C"><input type="radio" id="area_search" name="area_check" /><br/><label for="area_search">학내검색</label> </th>
+						<td class="L">
+							<div class="inputbox w100per">
+								<p class="txt"></p>
+								<select>
+									<option>동</option>
+									<option>이름</option>
+								</select>
+							</div> 
+							<input type="text" id="search" class="w100per mrt5" value="동/건물명/공간명을 입력하세요."><label for="search"></label>
+							<a href="#" class="mrt5 btn_darkblue"><span>검색</span></a>
+						</td>
+					</tr>
+					<tr>
+						<th class="C"><input type="radio" id="area_write" name="area_check" /><br/><label for="area_write">직접입력</label> </th>
+						<td class="L">
+							<input type="text" id="search_02" class="w100per"><label for="search_02"></label>
+							<a href="#" class="mrt5 btn_darkblue"><span>입력</span></a>
+							<p>직접입력하시면 상세보기 위치정보 사용이 제한됩다.</p>
+						</td>
+						
+					</tr>
+				</tbody>
+			</table>
+			<h6 class="subtitle mrt15">학내검색결과</h6>
+			<div class="personList">
+				<ul>
+					<li><input type="checkbox" id="check01" name="check01" /><label for="check01">10-1/교육정보관(10-1동)</label></li>
+					<li><input type="checkbox" id="check02" name="check02" /><label for="check02">16-1/신양학술정보관(16-1동)</label></li>
+					<li><input type="checkbox" id="check03" name="check03" /><label for="check03">44-1/신양학술정보관(44-1동)</label></li>
+				</ul>
+			</div>
+			<div class="btnArea mrt15">
+				<ul>
+					<li class="w50per"><a href="#" class="btn_darkblue"><span>선택</span></a></li>
+					<li class="w50per"><a href="#" class="btn_white"><span>닫기</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<a href="#" class="btn_close"><img src="images/sub/popup_btn_close.png" alt="닫기" /></a>
+</body>
+</html>
+
+
+
+
+
+
+
+

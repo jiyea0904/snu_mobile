@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>:: mySNU ::</title>
+<link rel="stylesheet" type="text/css" href="css/login.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+</head>
+<body id="login">
+	<div id="header">
+		<h1><img src="images/login/logo_kr.png" alt="서울대학교 포털 마이스누 로고" /></h1>
+		<ul class="language">
+			<li class="on"><a href="#">Korean</a></li>
+			<li><a href="#">English</a></li>
+		</ul>
+	</div>
+	<div class="wrap">
+		<div class="loginArea">
+			<fieldset>
+				<p><input type="checkbox" id="saveid" name="saveid" /><label for="saveid">아이디저장</label></p>
+				<ul>
+					<li><input type="text" id="id" name="id" value="아이디를 입력하세요." /><label for="id"></label></li>
+					<li><input type="password" id="pw" name="pw" value="비밀번호를 입력하세요." /><label for="pw"></label></li>
+				</ul>
+				<a href="#" class="btn_login"><span>로그인</span></a>
+			</fieldset>
+		</div>
+		<div class="iconLinkArea">
+			<ul>
+				<li><a href="#"><span class="icon"><img src="images/login/icon_01.png" alt="주간식단표" /></span><span>주간식단표</span></a></li>
+				<li class="map"><a href="#"><span class="icon"><img src="images/login/icon_02.png" alt="캠퍼스맵" /></span><span>캠퍼스맵</span></a></li>
+				<li><a href="#"><span class="icon"><img src="images/login/icon_03.png" alt="기부스토리" /></span><span>기부스토리</span></a></li>
+			</ul>
+		</div>
+		<div class="noticeArea">
+			<ul class="tab_title">
+				<li data="tab_01" class="first tabtitle tab_on"><a href="#">작업공지</a></li>
+				<li data="tab_02" class="tabtitle"><a href="#">보도자료</a></li>
+				<li data="tab_03" class="tabtitle"><a href="#">서울대 뉴스</a></li>
+				<li data="tab_04" class="tabtitle"><a href="#">대학신문</a></li>
+			</ul>
+			<div class="tab_content">
+				<div class="tab_01">
+					<ul class="notice_list">
+						<li><a href="#"><span class="title">[긴급]전자결재서비스 일시중지 안내(9.10(월)부터 10.10(수)까지 진행됩니다.</span></a><span class="date">2018.07.11</span></li>
+						<li><a href="#"><span class="title">보안장비 정비로 인한 인터넷 순단 현상</span></a><span class="date">2018.07.11</span></li>
+						<li><a href="#"><span class="title">보안장비 테스트로 인한 인터넷 순단 현상 발생 안내 </span></a><span class="date">2018.07.11</span></li>
+						<li><a href="#"><span class="title">도로 포장 안내(『옥외급수매립관(학군단~301동) 개선공사』) </span></a><span class="date">2018.07.11</span></li>
+						<li><a href="#"><span class="title">유회진학술정보관 신축공사 작업 안내(도로굴착) </span></a><span class="date">2018.07.11</span></li>
+						<li><a href="#"><span class="title">환경안전원 방역 실시</span></a><span class="date">2018.07.11</span></li>
+					</ul>
+					<a href="#" class="btn_more"><span>+ MORE</span></a>
+				</div>
+				<div class="tab_02 none">
+					<ul class="notice_list">
+						<li><a href="#"><span class="title">[긴급]전자결재서비스 일시중지 안내(9.10(월)부터 10.10(수)까지 진행됩니다.</span></a><span class="date">2018.07.11</span></li>
+						<li><a href="#"><span class="title">보안장비 정비로 인한 인터넷 순단 현상</span></a><span class="date">2018.07.11</span></li>
+						<li><a href="#"><span class="title">보안장비 테스트로 인한 인터넷 순단 현상 발생 안내 </span></a><span class="date">2018.07.11</span></li>
+						<li><a href="#"><span class="title">도로 포장 안내(『옥외급수매립관(학군단~301동) 개선공사』) </span></a><span class="date">2018.07.11</span></li>
+						<li><a href="#"><span class="title">유회진학술정보관 신축공사 작업 안내(도로굴착) </span></a><span class="date">2018.07.11</span></li>
+						<li><a href="#"><span class="title">환경안전원 방역 실시</span></a><span class="date">2018.07.11</span></li>
+					</ul>
+					<a href="#" class="btn_more"><span>+ MORE</span></a>
+				</div>
+				<div class="tab_03 none">
+					<ul class="notice_list">
+						<li><a href="#"><span class="title">[긴급]전자결재서비스 일시중지 안내(9.10(월)부터 10.10(수)까지 진행됩니다.</span></a><span class="date">2018.07.11</span></li>
+						<li><a href="#"><span class="title">보안장비 정비로 인한 인터넷 순단 현상</span></a><span class="date">2018.07.11</span></li>
+						<li><a href="#"><span class="title">보안장비 테스트로 인한 인터넷 순단 현상 발생 안내 </span></a><span class="date">2018.07.11</span></li>
+						<li><a href="#"><span class="title">도로 포장 안내(『옥외급수매립관(학군단~301동) 개선공사』) </span></a><span class="date">2018.07.11</span></li>
+						<li><a href="#"><span class="title">유회진학술정보관 신축공사 작업 안내(도로굴착) </span></a><span class="date">2018.07.11</span></li>
+						<li><a href="#"><span class="title">환경안전원 방역 실시</span></a><span class="date">2018.07.11</span></li>
+					</ul>
+					<a href="#" class="btn_more"><span>+ MORE</span></a>
+				</div>
+				<div class="tab_04 none">
+					<ul class="notice_list">
+						<li><a href="#"><span class="title">[긴급]전자결재서비스 일시중지 안내(9.10(월)부터 10.10(수)까지 진행됩니다.</span></a><span class="date">2018.07.11</span></li>
+						<li><a href="#"><span class="title">보안장비 정비로 인한 인터넷 순단 현상</span></a><span class="date">2018.07.11</span></li>
+						<li><a href="#"><span class="title">보안장비 테스트로 인한 인터넷 순단 현상 발생 안내 </span></a><span class="date">2018.07.11</span></li>
+						<li><a href="#"><span class="title">도로 포장 안내(『옥외급수매립관(학군단~301동) 개선공사』) </span></a><span class="date">2018.07.11</span></li>
+						<li><a href="#"><span class="title">유회진학술정보관 신축공사 작업 안내(도로굴착) </span></a><span class="date">2018.07.11</span></li>
+						<li><a href="#"><span class="title">환경안전원 방역 실시</span></a><span class="date">2018.07.11</span></li>
+					</ul>
+					<a href="#" class="btn_more"><span>+ MORE</span></a>
+				</div>
+				<div class="tab_05 none">
+					<ul class="notice_list">
+						<li><a href="#"><span class="title">[긴급]전자결재서비스 일시중지 안내(9.10(월)부터 10.10(수)까지 진행됩니다.</span></a><span class="date">2018.07.11</span></li>
+						<li><a href="#"><span class="title">보안장비 정비로 인한 인터넷 순단 현상</span></a><span class="date">2018.07.11</span></li>
+						<li><a href="#"><span class="title">보안장비 테스트로 인한 인터넷 순단 현상 발생 안내 </span></a><span class="date">2018.07.11</span></li>
+						<li><a href="#"><span class="title">도로 포장 안내(『옥외급수매립관(학군단~301동) 개선공사』) </span></a><span class="date">2018.07.11</span></li>
+						<li><a href="#"><span class="title">유회진학술정보관 신축공사 작업 안내(도로굴착) </span></a><span class="date">2018.07.11</span></li>
+						<li><a href="#"><span class="title">환경안전원 방역 실시</span></a><span class="date">2018.07.11</span></li>
+					</ul>
+					<a href="#" class="btn_more"><span>+ MORE</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<p class="copyright">COPYRIGHT (C)2018 SEOUL NATIONAL UNIVERSITY.<br/>ALL RIGHTS RESERVED.</p>
+	</div>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>:: mySNU ::</title>
+<link rel="stylesheet" type="text/css" href="css/sub.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/slider.js"></script>
+</head>
+<body>
+	<!-- header -->
+	<div id="header">
+		<div class="top">
+			<fieldset class="search">
+				<h1><a href="#" title="mySNU 포털시스템"><img src="images/main/logo.png" alt="mySNU로고" /></a></h1>
+				<input type="text" id="search" name="search" /><label for="search"></label>
+				<a href="#" class="btn_search"><img src="images/main/btn_search.png" alt="검색" /></a>
+			</fieldset>
+			<a href="#" class="btn_menudetail_on"><img src="images/main/icon_menu.png" alt="메뉴" /></a>
+		</div>
+	</div>
+	<!-- header //-->
+	<!-- menu_detail -->
+	<div class="menu_detail">
+		<div class="bg"></div>
+		<div class="wrap">
+			<h2>홍길동 계약직님</h2>
+			<ul class="link">
+				<li><a href="#"><span>서울대학교</span></a></li>
+				<li><a href="#"><span>마이페이지</span></a></li>
+				<li><a href="#"><span>로그아웃</span></a></li>
+			</ul>
+			<div class="gnb">
+				<ul class="depth01">
+					<li class="depth"><a href="#"><span>학사행정</span></a>
+						<ul class="depth02">
+							<li><a href="#"><span>2 Depth 1</span></a>
+								<ul class="depth03">
+									<li><a href="#"><span>3 Depth 1</span></a></li>
+									<li><a href="#"><span>3 Depth 2</span></a></li>
+								</ul>
+							</li>
+							<li><a href="#"><span>2 Depth 2</span></a></li>
+							<li><a href="#"><span>2 Depth 3</span></a></li>
+						</ul>
+					</li>
+					<li><a href="#"><span>웹메일</span></a></li>
+					<li><a href="#"><span>전자결재</span></a></li>
+					<li><a href="#"><span>정보광장</span></a></li>
+					<li><a href="#"><span>스누인지원</span></a></li>
+					<li><a href="#"><span>캘린더</span></a></li>
+				</ul>
+			</div>
+			<a href="#" class="btn_menudetail_off"><img src="images/main/btn_close_white.png" alt="닫기" /></a>
+		</div>
+	</div>
+	<!-- menu_detail //-->
+	<div id="contents">
+		<div class="title">
+			<a href="#" class="btn_prev"><img src="images/sub/btn_prev.png" alt="이전으로" /></a>
+			<h3>바로가기 서비스 설정</h3>
+		</div>
+		<div class="wrap">
+			<div class="btnArea">
+				<ul>
+					<li class="w33per"><a href="#" class="btn_darkblue"><span>저장</span></a></li>
+					<li class="w33per"><a href="#" class="btn_white refresh"><span>초기화</span></a></li>
+					<li class="w33per"><a href="#" class="btn_gray"><span>메뉴 가져오기</span></a></li>
+				</ul>
+			</div>
+			<div class="info mrt15">
+				<ul>
+					<li>메인의 바로가기 서비스를 설정할 수 있습니다.</li>
+					<li>노출되는 메뉴순서를 변경하신 후 확인 버튼을 누르세요.</li>
+				</ul>
+			</div>
+			<ul class="quicklinkList">
+				<li class="lock first"><em>LOCK</em>주간식단표</li>
+				<li class="lock"><em>LOCK</em>스누메일</li>
+				<li><em>01</em>전자결재
+					<span class="btn">
+						<a href="#" class="btn_delete"><img src="images/sub/btn_delete.gif" alt="삭제" /></a>
+						<a href="#" class="btn_delete"><img src="images/sub/btn_down.gif" alt="아래로 이동" /></a>
+						<a href="#" class="btn_delete"><img src="images/sub/btn_up.gif" alt="위로 이동" /></a>
+					</span>
+					<span class="alarm">바로가기를 관리자가 삭제하였습니다.</span>
+				</li>
+				<li><em>02</em>구성원검색
+					<span class="btn">
+						<a href="#" class="btn_delete"><img src="images/sub/btn_delete.gif" alt="삭제" /></a>
+						<a href="#" class="btn_delete"><img src="images/sub/btn_down.gif" alt="아래로 이동" /></a>
+						<a href="#" class="btn_delete"><img src="images/sub/btn_up.gif" alt="위로 이동" /></a>
+					</span>
+				</li>
+				<li><em>03</em>직원공지 
+					<span class="btn">
+						<a href="#" class="btn_delete"><img src="images/sub/btn_delete.gif" alt="삭제" /></a>
+						<a href="#" class="btn_delete"><img src="images/sub/btn_down.gif" alt="아래로 이동" /></a>
+						<a href="#" class="btn_delete"><img src="images/sub/btn_up.gif" alt="위로 이동" /></a>
+					</span>
+				</li>
+				<li><em>04</em>애경사
+					<span class="btn">
+						<a href="#" class="btn_delete"><img src="images/sub/btn_delete.gif" alt="삭제" /></a>
+						<a href="#" class="btn_delete"><img src="images/sub/btn_down.gif" alt="아래로 이동" /></a>
+						<a href="#" class="btn_delete"><img src="images/sub/btn_up.gif" alt="위로 이동" /></a>
+					</span>
+				</li>
+				<li><em>05</em>인사발령
+					<span class="btn">
+						<a href="#" class="btn_delete"><img src="images/sub/btn_delete.gif" alt="삭제" /></a>
+						<a href="#" class="btn_delete"><img src="images/sub/btn_down.gif" alt="아래로 이동" /></a>
+						<a href="#" class="btn_delete"><img src="images/sub/btn_up.gif" alt="위로 이동" /></a>
+					</span>
+				</li>
+				<li><em>06</em>학사캘린더
+					<span class="btn">
+						<a href="#" class="btn_delete"><img src="images/sub/btn_delete.gif" alt="삭제" /></a>
+						<a href="#" class="btn_delete"><img src="images/sub/btn_down.gif" alt="아래로 이동" /></a>
+						<a href="#" class="btn_delete"><img src="images/sub/btn_up.gif" alt="위로 이동" /></a>
+					</span>
+				</li>
+				<li><em>07</em>도서검색
+					<span class="btn">
+						<a href="#" class="btn_delete"><img src="images/sub/btn_delete.gif" alt="삭제" /></a>
+						<a href="#" class="btn_delete"><img src="images/sub/btn_down.gif" alt="아래로 이동" /></a>
+						<a href="#" class="btn_delete"><img src="images/sub/btn_up.gif" alt="위로 이동" /></a>
+					</span>
+				</li>
+				<li><em>08</em>학칙 및 규정
+					<span class="btn">
+						<a href="#" class="btn_delete"><img src="images/sub/btn_delete.gif" alt="삭제" /></a>
+						<a href="#" class="btn_delete"><img src="images/sub/btn_down.gif" alt="아래로 이동" /></a>
+						<a href="#" class="btn_delete"><img src="images/sub/btn_up.gif" alt="위로 이동" /></a>
+					</span>
+				</li>
+				<li><em>09</em>종합건강검진신청
+					<span class="btn">
+						<a href="#" class="btn_delete"><img src="images/sub/btn_delete.gif" alt="삭제" /></a>
+						<a href="#" class="btn_delete"><img src="images/sub/btn_down.gif" alt="아래로 이동" /></a>
+						<a href="#" class="btn_delete"><img src="images/sub/btn_up.gif" alt="위로 이동" /></a>
+					</span>
+				</li>
+				<li><em>10</em>월별급여내역조회
+					<span class="btn">
+						<a href="#" class="btn_delete"><img src="images/sub/btn_delete.gif" alt="삭제" /></a>
+						<a href="#" class="btn_delete"><img src="images/sub/btn_down.gif" alt="아래로 이동" /></a>
+						<a href="#" class="btn_delete"><img src="images/sub/btn_up.gif" alt="위로 이동" /></a>
+					</span>
+				</li>
+				<li><em>11</em>시설예약/신고
+					<span class="btn">
+						<a href="#" class="btn_delete"><img src="images/sub/btn_delete.gif" alt="삭제" /></a>
+						<a href="#" class="btn_delete"><img src="images/sub/btn_down.gif" alt="아래로 이동" /></a>
+						<a href="#" class="btn_delete"><img src="images/sub/btn_up.gif" alt="위로 이동" /></a>
+					</span>
+				</li>
+			</ul>
+			<div class="btnArea mrt15">
+				<ul>
+					<li class="w33per"><a href="#" class="btn_darkblue"><span>저장</span></a></li>
+					<li class="w33per"><a href="#" class="btn_white refresh"><span>초기화</span></a></li>
+					<li class="w33per"><a href="#" class="btn_gray"><span>메뉴 가져오기</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<ul>
+			<li><a href="#"><span>처음으로</span></a></li>
+			<li><a href="#"><span>마이페이지</span></a></li>
+			<li><a href="#"><span>PC버전</span></a></li>
+			<li><a href="#"><span>로그아웃</span></a></li>
+		</ul>
+	</div>
+</body>
+</html>
+
+
+
+

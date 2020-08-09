@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>:: mySNU ::</title>
+<link rel="stylesheet" type="text/css" href="css/sub.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/slider.js"></script>
+</head>
+<body>
+	<!-- header -->
+	<div id="header">
+		<div class="top">
+			<fieldset class="search">
+				<h1><a href="#" title="mySNU 포털시스템"><img src="images/main/logo.png" alt="mySNU로고" /></a></h1>
+				<input type="text" id="search" name="search" /><label for="search"></label>
+				<a href="#" class="btn_search"><img src="images/main/btn_search.png" alt="검색" /></a>
+			</fieldset>
+			<a href="#" class="btn_menudetail_on"><img src="images/main/icon_menu.png" alt="메뉴" /></a>
+		</div>
+	</div>
+	<!-- header //-->
+	<!-- menu_detail -->
+	<div class="menu_detail">
+		<div class="bg"></div>
+		<div class="wrap">
+			<h2>홍길동 계약직님</h2>
+			<ul class="link">
+				<li><a href="#"><span>서울대학교</span></a></li>
+				<li><a href="#"><span>마이페이지</span></a></li>
+				<li><a href="#"><span>로그아웃</span></a></li>
+			</ul>
+			<div class="gnb">
+				<ul class="depth01">
+					<li class="depth"><a href="#"><span>학사행정</span></a>
+						<ul class="depth02">
+							<li><a href="#"><span>2 Depth 1</span></a>
+								<ul class="depth03">
+									<li><a href="#"><span>3 Depth 1</span></a></li>
+									<li><a href="#"><span>3 Depth 2</span></a></li>
+								</ul>
+							</li>
+							<li><a href="#"><span>2 Depth 2</span></a></li>
+							<li><a href="#"><span>2 Depth 3</span></a></li>
+						</ul>
+					</li>
+					<li><a href="#"><span>웹메일</span></a></li>
+					<li><a href="#"><span>전자결재</span></a></li>
+					<li><a href="#"><span>정보광장</span></a></li>
+					<li><a href="#"><span>스누인지원</span></a></li>
+					<li><a href="#"><span>캘린더</span></a></li>
+				</ul>
+			</div>
+			<a href="#" class="btn_menudetail_off"><img src="images/main/btn_close_white.png" alt="닫기" /></a>
+		</div>
+	</div>
+	<!-- menu_detail //-->
+	<div id="contents">
+		<div class="title">
+			<a href="#" class="btn_prev"><img src="images/sub/btn_prev.png" alt="이전으로" /></a>
+			<h3>캘린더</h3>
+			<a href="#" class="btn_submenu"><img src="images/sub/btn_submenu.png" alt="서브메뉴" /></a>
+		</div>
+		<div class="calendarlnb">
+			<h3>캘린더</h3>
+			<ul class= "depth01">
+				<li class="on"><span><a href="#">학사캘린더</a><a href="#" class="btn_arr"></a></span>
+					<ul class="depth02">
+						<li class="on"><a href="#"><span class="bullet" style="background-color:#0f3e8e;"></span><span class="title">수학</span></a></li>
+						<li class="on"><a href="#"><span class="bullet" style="background-color:#005dd0;"></span><span class="title">장학</span></a></li>
+					</ul>
+				</li>
+				<li class="on"><span><a href="#">학사캘린더</a><a href="#" class="btn_arr"></a></span>
+					<ul class="depth02">
+						<li class="on"><a href="#"><span class="bullet" style="background-color:#07cef2;"></span><span class="title">행사</span></a></li>
+					</ul>
+				</li>
+				<li class="on"><span><a href="#">나의캘린더</a><a href="#" class="btn_arr"></a></span>
+					<ul class="depth02">
+						<li class="on"><a href="#"><span class="bullet" style="background-color:#e4340b;"></span><span class="title">행사캘린더행사캘린더행사캘린더행사캘린더</span></a></li>
+						<li class="off"><a href="#"><span class="bullet" style="background-color:#e46c0b;"></span><span class="title">미팅캘린더</span></a></li>
+						<li class="on"><a href="#"><span class="bullet" style="background-color:#f92d45;"></span><span class="title">근무캘린더</span></a></li>
+						<li class="on"><a href="#"><span class="bullet" style="background-color:#becc37;"></span><span class="title">관심캘린더</span></a></li>
+					</ul>
+				</li>
+				<li class="on"><span><a href="#">나의부서캘린더</a><a href="#" class="btn_arr"></a></span>
+					<ul class="depth02">
+						<li class="off"><a href="#"><span class="bullet" style="background-color:#02acc4;"></span><span class="title">나의부서1</span></a></li>
+						<li class="off"><a href="#"><span class="bullet" style="background-color:#555555;"></span><span class="title">나의부서2</span></a></li>
+					</ul>
+				</li>
+				<li class="on"><span><a href="#">학과캘린더</a><a href="#" class="btn_arr"></a></span>
+					<ul class="depth02">
+						<li class="off"><a href="#"><span class="bullet" style="background-color:#5569c8;"></span><span class="title">국어국문학과</span></a></li>
+						<li class="off"><a href="#"><span class="bullet" style="background-color:#0f3e8e;"></span><span class="title">영어영문학과</span></a></li>
+					</ul>
+				</li>
+			</ul>
+			<a href="#" class="btn_close"><img src="images/sub/popup_btn_close.png" alt="닫기" /></a>
+		</div>
+		<div class="wrap">
+			<div class="board">
+				<div class="btnArea">
+					<ul>
+						<li class="w100per"><a href="#" class="btn_darkblue"><span>미팅등록</span></a></li>
+					</ul>
+				</div>
+				<!-- tsearchArea -->
+				<div class="tsearchArea mrt15">
+					<fieldset class="w100per">
+						<div class="w25per">
+							<div class="inputbox">
+								<p class="txt"></p>
+								<select>
+									<option>제목</option>
+									<option>장소</option>
+									<option>내용</option>
+								</select>
+							</div> 
+						</div>
+						<div class="w75per">
+							<input type="text" id="search_input" value="검색어를 입력하세요."><label for="search_input"></label>
+						</div>
+						<a class="btn_gray btn_search" href="#"><span>검색</span></a> 
+					</fieldset>
+				</div>
+				<!-- tsearchArea //-->
+				<h6 class="subtitle">2018년 11월 9일 (목)</h6>
+				<!-- calendar -->
+				<table class="calendar_table day" cellpadding="0" cellspacing="0">  
+					<caption>캘린더</caption>
+					<colgroup>
+						<col style="width:20%">
+						<col style="width:80%">
+					</colgroup>
+					<tbody>
+						<tr class="allday">
+							<td class="L"><span class="bullet" style="background-color:#0f3e8e;"></span><em class="start">시작</em></td>
+							<td class="L">
+								<span class="time">종일</span>
+								<a href="#"><span class="title">미팅캘린더를 공유합니다. 캘린더 확인하시어 미팅 참석 바랍니다.</span></a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<ul>
+			<li><a href="#"><span>처음으로</span></a></li>
+			<li><a href="#"><span>마이페이지</span></a></li>
+			<li><a href="#"><span>PC버전</span></a></li>
+			<li><a href="#"><span>로그아웃</span></a></li>
+		</ul>
+	</div>
+</body>
+</html>
+
+
+
+

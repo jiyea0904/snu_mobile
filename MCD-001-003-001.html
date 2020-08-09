@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>:: mySNU ::</title>
+<link rel="stylesheet" type="text/css" href="css/board.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/sub.js"></script>
+</head>
+<body class="iframe">
+	<div class="board">
+		<div class="btnArea">
+			<ul>
+				<li class="w33per"><a href="#" class="btn_white"><span>삭제</span></a></li>
+				<li class="w33per"><a href="#" class="btn_darkblue"><span>등록</span></a></li>
+				<li class="w33per"><a href="#" class="btn_gray"><span>목록</span></a></li>
+			</ul>
+		</div>
+		<div class="info mrt15">
+			<p>보다 정확한 일정은 <b>웹포털(MY SNU)</b>에서 등록하시기 바랍니다.</p>
+		</div>
+		<table cellpadding="0" cellspacing="0" class="mrt10">
+			<colgroup>
+				<col width="25%" />
+				<col width="75%" />
+			</colgroup>
+			<tbody>
+				<tr>
+					<th class="C"><span class="import">제목</span></th>
+					<td class="L"><input type="text" id="title" name="title" class="w100per" /><label for="title"></label></td>
+				</tr>
+				<tr>
+					<th class="C"><span class="import">공개여부</span></th>
+					<td class="L">
+						<input type="radio" id="team" name="open" class="first" /><label for="team">소속부서 공개</label>
+						<input type="radio" id="join" name="open" /><label for="join">참석자에게만 공개</label>
+					</td>
+				</tr>
+				<tr>
+					<th class="C"><span class="import">카테고리</span></th>
+					<td class="L">
+						<div class="inputbox w100per">
+							<p class="txt"></p>
+							<select>
+								<option>학사</option>
+							</select>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th class="C"><span class="import">일시</span></th>
+					<td class="L">
+						<span><input type="checkbox" id="allday" name="allday" class="first" /><label for="allday">종일</label></span>
+						<div class="date">
+							<input type="text" id="date_start" name="date_start" class="w130 date" value="2018.06.18(수)" /><label for="date_start"></label>
+							<div class="inputbox w60">
+								<p class="txt"></p>
+								<select>
+									<option>16시</option>
+								</select>
+							</div>
+							<div class="inputbox w60">
+								<p class="txt"></p>
+								<select>
+									<option>00분</option>
+								</select>
+							</div>
+						</div>
+						<span class="fl mrr5 mrtb2">~</span>
+						<div class="date">
+							<input type="text" id="date_end" name="date_end" class="w130 date" value="2018.06.18(수)" /><label for="date_end"></label>
+							<div class="inputbox w60">
+								<p class="txt"></p>
+								<select>
+									<option>16시</option>
+								</select>
+							</div>
+							<div class="inputbox w60">
+								<p class="txt"></p>
+								<select>
+									<option>00분</option>
+								</select>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th class="C">알림</th>
+					<td class="L">
+						<span class="fl mrr5"><input type="checkbox" id="alarm" name="alarm" class="first" /><label for="alarm">사용</label></span>
+						<div class="fl date">
+							<div class="inputbox w60">
+								<p class="txt"></p>
+								<select>
+									<option>01시</option>
+								</select>
+							</div>
+							<div class="inputbox w60">
+								<p class="txt"></p>
+								<select>
+									<option>00분</option>
+								</select>
+							</div>
+							<span>전</span>
+						</div>
+						<br/>
+						<p class="mrt5">
+							<input type="checkbox" id="alarm_email" name="alarm_email" class="first" /><label for="alarm_email">이메일</label>
+							<input type="checkbox" id="alarm_apppush" name="alarm_apppush" /><label for="alarm_apppush">서울대앱푸시</label>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<th class="C">공간</th>
+					<td class="L">
+						<input type="text" id="area" name="area" value="공간을 입력하세요." class="w100per" /><label for="area"></label><a href="#" class="mrt5 btn_darkblue search"><span>공간검색</span></a>
+					</td>
+				</tr>
+				<tr>
+					<th class="C">대상자</th>
+					<td class="L">
+						<a href="#" class="btn_gray"><span>참여자 추가</span></a>
+						<a href="#" class="btn_gray"><span>외부인 추가</span></a>
+						<div class="personList mrt5">
+							<span>장길산1 / 정보화팀 <a href="#" class="btn_delete"><img src="images/sub/delete_reply.png" alt="삭제" /></a></span>
+							<span>장길산2 / 정보화팀 <a href="#" class="btn_delete"><img src="images/sub/delete_reply.png" alt="삭제" /></a></span>
+							<span>장길산3 / 정보화팀 <a href="#" class="btn_delete"><img src="images/sub/delete_reply.png" alt="삭제" /></a></span>
+							<span>장길산4 / 정보화팀 <a href="#" class="btn_delete"><img src="images/sub/delete_reply.png" alt="삭제" /></a></span>
+							<span>장길산5 / 정보화팀 <a href="#" class="btn_delete"><img src="images/sub/delete_reply.png" alt="삭제" /></a></span>
+							<span>장길산6 / 정보화팀 <a href="#" class="btn_delete"><img src="images/sub/delete_reply.png" alt="삭제" /></a></span>
+							<span>asdfsdf@naver.com <a href="#" class="btn_delete"><img src="images/sub/delete_reply.png" alt="삭제" /></a></span>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th class="C"><span class="import">내용</span></th>
+					<td class="L"><textarea></textarea></td>
+				</tr>
+				<tr>
+					<th class="C">관련문서</th>
+					<td class="L">
+						<div class="addFile">
+							<div class="filelist">
+								<p>파일은 10개까지 첨부할 수 있으며, 전체 용량은 100Mbyte를 넘을 수 없습니다.</p>
+								<select name="select" multiple="multiple" id="select">
+									<option>업무요청파일(10Byte)</option>
+								</select>
+							</div>
+							<input type="file" name="fileField" title="파일첨부" class="filefield" id="fileField" />
+							<div class="fl mrt10">
+								<a href="#" class="btn_white"><span>파일추가 +</span></a> <a href="#" class="btn_white"><span>파일삭제 -</span></a>
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="btnArea mrt15">
+			<ul>
+				<li class="w33per"><a href="#" class="btn_white"><span>삭제</span></a></li>
+				<li class="w33per"><a href="#" class="btn_darkblue"><span>등록</span></a></li>
+				<li class="w33per"><a href="#" class="btn_gray"><span>목록</span></a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+

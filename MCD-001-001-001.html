@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>:: mySNU ::</title>
+<link rel="stylesheet" type="text/css" href="css/board.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/sub.js"></script>
+</head>
+<body class="iframe">
+<div class="board">
+	<div class="btnArea">
+		<ul>
+			<li class="w100per"><a href="#" class="btn_darkblue"><span>미팅등록</span></a></li>
+		</ul>
+	</div>
+	<!-- tsearchArea -->
+	<div class="tsearchArea mrt15">
+		<fieldset class="w100per">
+			<div class="w25per">
+				<div class="inputbox">
+					<p class="txt"></p>
+					<select>
+						<option>제목</option>
+						<option>장소</option>
+						<option>내용</option>
+					</select>
+				</div> 
+			</div>
+			<div class="w75per">
+				<input type="text" id="search" value="검색어를 입력하세요."><label for="search"></label>
+			</div>
+			<a class="btn_gray btn_search" href="#"><span>검색</span></a> 
+		</fieldset>
+	</div>
+	<!-- tsearchArea //-->
+	<div class="calendar_tab">
+		<p><a href="#"><img src="images/sub/page_prev.png" alt="이전주"></a><span><em>2018</em>년<em>11</em>월<em>4</em>일</span><a href="#"><img src="images/sub/page_next.png" alt="다음주"></a></p>
+	</div>
+	<!-- calendar -->
+	<table class="calendar_table day" cellpadding="0" cellspacing="0">  
+		<caption>캘린더</caption>
+		<colgroup>
+			<col style="width:20%">
+			<col style="width:80%">
+		</colgroup>
+		<tbody>
+			<tr class="allday">
+				<td class="L"><span class="bullet" style="background-color:#0f3e8e;"></span><em class="start">시작</em></td>
+				<td class="L">
+					<span class="time">종일</span>
+					<a href="#"><span class="title">미팅캘린더를 공유합니다. 캘린더 확인하시어 미팅 참석 바랍니다.</span></a>
+				</td>
+			</tr>
+			<tr class="allday">
+				<td class="L"><span class="bullet" style="background-color:#005dd0;"></span><em class="start">시작</em></td>
+				<td class="L">
+					<span class="time">종일</span>
+					<a href="#"><span class="title">미팅캘린더를 공유합니다. 캘린더 확인하시어 미팅 참석 바랍니다.</span></a>
+				</td>
+			</tr>
+			<tr>
+				<td class="L"><span class="bullet" style="background-color:#07cef2;"></span><em class="start">시작</em></td>
+				<td class="L">
+					<span class="time">오전 11:00~오후 03:00</span>
+					<a href="#"><span class="title">미팅캘린더를 공유합니다. 캘린더 확인하시어 미팅 참석 바랍니다.</span></a>
+				</td>
+			</tr>
+			<tr>
+				<td class="L"><span class="bullet" style="background-color:#e4340b;"></span><em class="start">시작</em></td>
+				<td class="L">
+					<span class="time">오전 11:00~오후 03:00</span>
+					<a href="#"><span class="title">미팅캘린더를 공유합니다. 캘린더 확인하시어 미팅 참석 바랍니다.</span></a>
+				</td>
+			</tr>
+			<tr>
+				<td class="L"><span class="bullet" style="background-color:#e46c0b;"></span><em class="end">종료</em></td>
+				<td class="L">
+					<span class="time">오전 11:00~오후 03:00</span>
+					<a href="#"><span class="title">미팅캘린더를 공유합니다. 캘린더 확인하시어 미팅 참석 바랍니다.</span></a>
+				</td>
+			</tr>
+			<tr>
+				<td class="L"><span class="bullet" style="background-color:#f92d45;"></span><em class="end">종료</em></td>
+				<td class="L">
+					<span class="time">오전 11:00~오후 03:00</span>
+					<a href="#"><span class="title">미팅캘린더를 공유합니다. 캘린더 확인하시어 미팅 참석 바랍니다.</span></a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h6 class="subtitle mrt15">2018년 11월 9일 (목)</h6>
+	<!-- calendar -->
+	<table class="calendar_table day" cellpadding="0" cellspacing="0">  
+		<caption>캘린더</caption>
+		<colgroup>
+			<col style="width:20%">
+			<col style="width:80%">
+		</colgroup>
+		<tbody>
+			<tr class="allday">
+				<td class="L"><span class="bullet" style="background-color:#0f3e8e;"></span><em class="start">시작</em></td>
+				<td class="L">
+					<span class="time">종일</span>
+					<a href="#"><span class="title">미팅캘린더를 공유합니다. 캘린더 확인하시어 미팅 참석 바랍니다.</span></a>
+				</td>
+			</tr>
+			<tr class="allday">
+				<td class="L"><span class="bullet" style="background-color:#005dd0;"></span><em class="start">시작</em></td>
+				<td class="L">
+					<span class="time">종일</span>
+					<a href="#"><span class="title">미팅캘린더를 공유합니다. 캘린더 확인하시어 미팅 참석 바랍니다.</span></a>
+				</td>
+			</tr>
+			<tr>
+				<td class="L"><span class="bullet" style="background-color:#07cef2;"></span><em class="start">시작</em></td>
+				<td class="L">
+					<span class="time">오전 11:00~오후 03:00</span>
+					<a href="#"><span class="title">미팅캘린더를 공유합니다. 캘린더 확인하시어 미팅 참석 바랍니다.</span></a>
+				</td>
+			</tr>
+			<tr>
+				<td class="L"><span class="bullet" style="background-color:#e4340b;"></span><em class="start">시작</em></td>
+				<td class="L">
+					<span class="time">오전 11:00~오후 03:00</span>
+					<a href="#"><span class="title">미팅캘린더를 공유합니다. 캘린더 확인하시어 미팅 참석 바랍니다.</span></a>
+				</td>
+			</tr>
+			<tr>
+				<td class="L"><span class="bullet" style="background-color:#e46c0b;"></span><em class="end">종료</em></td>
+				<td class="L">
+					<span class="time">오전 11:00~오후 03:00</span>
+					<a href="#"><span class="title">미팅캘린더를 공유합니다. 캘린더 확인하시어 미팅 참석 바랍니다.</span></a>
+				</td>
+			</tr>
+			<tr>
+				<td class="L"><span class="bullet" style="background-color:#f92d45;"></span><em class="end">종료</em></td>
+				<td class="L">
+					<span class="time">오전 11:00~오후 03:00</span>
+					<a href="#"><span class="title">미팅캘린더를 공유합니다. 캘린더 확인하시어 미팅 참석 바랍니다.</span></a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+</body>
+</html>
+
+
+
+
