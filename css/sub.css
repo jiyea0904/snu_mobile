@@ -1,0 +1,105 @@
+@charset "utf-8"; 
+/* CSS Document */
+@import url("board.css");
+
+
+div.title{position:relative; width:100%; height:45px; line-height:45px; text-align:center; background-color:#0f3e8e;}
+div.title .btn_prev{position:absolute; display:inline-block; width:15px; height:22px; top:13px; left:12px;}
+div.title .btn_submenu{position:absolute; display:inline-block; width:20px; height:20px; top:13px; right:12px;}
+div.title h3{display:inline-block; font-size:18px; color:#fff; font-weight:400;}
+div.title:after{clear:both; display:block; content:"";}
+
+#contents{position:relative;}
+#contents .wrap{margin:10px 0; border-top:1px solid #d8d8d8; border-bottom:1px solid #d8d8d8; background-color:#fff; padding:10px;}
+#footer{margin:0;}
+
+.lnb{position:absolute; top:45px; right:0; width:230px; height:100%; border:1px solid #5569c8; box-sizing:border-box; background-color:#fff; z-index:998;}
+.lnb:after{clear:both; display:block; content:"";}
+.lnb h3{width:100%; line-height:24px; padding:15px 10px; box-sizing:border-box; font-size:18px; color:#fff; font-weight:400; background-color:#5569c8;}
+
+.lnb .depth01 > li > span{display:inline-block; width:100%; height:42px; line-height:41px; background-color:#e8ecff; padding:0 10px; box-sizing:border-box; border-bottom:1px solid #7484d2;}
+.lnb .depth01 > li > span > a{display:inline-block; height:41px; line-height:41px; font-size:15px; color:#0f3e8e; font-weight:500;}
+.lnb .depth01 > li > span > a.btn_arr{float:right; display:inline-block; width:11px; height:8px;background:url(../images/sub/lnb_arr_down.png) no-repeat right center; margin-top:16px; background-size:11px;}
+.lnb .depth02{display:none; padding:10px 15px; box-sizing:border-box;}
+.lnb .depth02 > li{height:30px; line-height:30px; background:url(../images/sub/depth02_bullet.gif) no-repeat left center; padding-left:10px;}
+.lnb .depth02 > li:after{clear:both; display:block; content:"";}
+.lnb .depth02 > li > a{font-size:14px; color:#555555; font-weight:400;}
+.lnb .depth02 > li > a:hover{font-weight:500; color:#0f3e8e;}
+.lnb .depth02 > li.on > a{font-weight:500; color:#0f3e8e;}
+.lnb .depth01 > li.on > span > a.btn_arr{float:right; display:inline-block; width:11px; height:8px; background:url(../images/main/lnb_arr_up.png) no-repeat right center; margin-top:16px; background-size:11px;}
+.lnb .btn_close{position:absolute; top:17px; right:10px; display:inline-block; width:15px; height:15px;}
+
+.contentsArea{position:relative; float:left; margin-left:20px; width:960px; border:1px solid #d8d8d8; border-top:2px solid #7484d1; box-sizing:border-box; padding:20px 30px;}
+.contentsArea:after{clear:both; display:block; content:"";}
+.contentsArea h3{height:40px; line-height:40px; font-size:26px; font-weight:500; color:#0f3e8e; background:url(../images/sub/bullet_title.gif) no-repeat left center; padding-left:12px; margin:15px 0 20px 0;}
+.contentsArea .location{position:absolute; top:40px; right:30px; display:inline-block; height:24px; line-height:24px;}
+.contentsArea .location li{float:left; height:24px; line-height:24px; background:url(../images/sub/location_arr.png) no-repeat right center; padding-right:20px; margin-right:10px;}
+.contentsArea .location li a{font-size:15px; color:#7c7c7c;}
+.contentsArea .location li.here{background:none; padding:0; margin:0;}
+.contentsArea .location li.here a{color:#0f3e8e;}
+
+
+.calendarlnb{position:absolute; top:45px; right:0; width:230px; height:100%;box-sizing:border-box; background-color:#fff; z-index:998;}
+.calendarlnb:after{clear:both; display:block; content:"";}
+.calendarlnb h3{width:100%; line-height:24px; padding:15px 10px; box-sizing:border-box; font-size:18px; color:#fff; font-weight:400; background-color:#5569c8;}
+
+.calendarlnb .depth01{border:1px solid #5569c8;}
+.calendarlnb .depth01 > li > span{display:inline-block; width:100%; height:42px; line-height:41px; background-color:#e8ecff; padding:0 10px; box-sizing:border-box; border-bottom:1px solid #7484d2;}
+.calendarlnb .depth01 > li > span > a{display:inline-block; height:41px; line-height:41px; font-size:15px; color:#0f3e8e; font-weight:500;}
+.calendarlnb .depth01 > li > span > a.btn_arr{float:right; display:inline-block; width:11px; height:8px;background:url(../images/sub/lnb_arr_down.png) no-repeat right center; margin-top:16px; background-size:11px;}
+.calendarlnb .depth02{display:none; padding:10px 15px; box-sizing:border-box; background-color:#fff;}
+.calendarlnb .depth02 > li{height:30px; line-height:30px; background:url(../images/sub/depth02_bullet.gif) no-repeat left center; padding-left:10px;}
+.calendarlnb .depth02 > li:after{clear:both; display:block; content:"";}
+.calendarlnb .depth02 > li > a{font-size:14px; color:#555555; font-weight:400;}
+.calendarlnb .depth02 > li > a:hover{font-weight:500; color:#0f3e8e;}
+.calendarlnb .depth02 > li.on > a{font-weight:500; color:#0f3e8e;}
+.calendarlnb .depth01 > li.on > span > a.btn_arr{float:right; display:inline-block; width:11px; height:8px; background:url(../images/main/lnb_arr_up.png) no-repeat right center; margin-top:16px; background-size:11px;}
+.lnb .btn_close{position:absolute; top:17px; right:10px; display:inline-block; width:15px; height:15px;}
+.calendarlnb .depth02 > li{height:24px; line-height:24px; background:none; padding:0;}
+.calendarlnb .depth02 > li a span.title{float:left;  display:inline-block; max-width:150px; height:24px; line-height:24px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.calendarlnb .depth02 > li.off span.bullet{float:left; display:inline-block; width:13px; height:13px; background-color:#fff !important; border:1px solid #ddd; border-radius:3px; box-sizing:border-box; margin:6px 5px 5px 0;}
+.calendarlnb .depth02 > li.on span.bullet{float:left; display:inline-block; width:13px; height:13px; border-radius:3px; box-sizing:border-box; border:none; margin:6px 5px 5px 0;}
+.calendarlnb .btn_close{position:absolute; top:17px; right:10px; display:inline-block; width:15px; height:15px;}
+
+.btn_addschedule{display:inline-block; width:210px; height:38px; line-height:38px; box-sizing:border-box; border-radius:5px; background-color:#0f3e8e; text-align:center; margin:10px;}
+.btn_addschedule span{font-size:17px; color:#fff;}
+
+.contentsArea_mini{position:relative; float:left; margin:0 20px; width:680px; border:1px solid #d8d8d8; border-top:2px solid #7484d1; box-sizing:border-box; padding:20px 30px;}
+.contentsArea_mini:after{clear:both; display:block; content:"";}
+.contentsArea_mini h3{height:40px; line-height:40px; font-size:26px; font-weight:500; color:#0f3e8e; border-bottom:1px solid #d9d9d9; padding-bottom:15px;}
+
+.rightArea{position:relative; float:right; width:260px; box-sizing:border-box; border:none;}
+.rightArea div.box{border:1px solid #d8d8d8;}
+.rightArea:after{clear:both; display:block; content:"";}
+.rightArea .box > div{padding-bottom:10px;}
+.rightArea > div h5{height:52px; line-height:52px; border-bottom:1px solid #d8d8d8; background-color:#f2f2f2; font-size:18px; color:#333; font-weight:500; padding:0 20px;}
+.rightArea > div ul.normalList{padding:0 20px; box-sizing:border-box; margin-top:10px;}
+.rightArea > div ul.normalList li{height:30px; line-height:30px; background:url("../images/sub/depth02_bullet.gif") no-repeat left center; padding-left:10px; box-sizing:border-box;}
+.rightArea > div ul.normalList li a{width:100%; height:30px; line-height:30px; display:inline-block;}
+.rightArea > div ul.normalList li span.title{display:inline-block; width:90%; height:30px; line-height:30px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-size:15px; color:#555;}
+.rightArea > div ul.normalList li em{color:#fd7d6b;}
+.rightArea > div .paging{text-align:center; height:20px; line-height:20px;}
+.rightArea > div .paging a img{margin-top:-8px;}
+.rightArea > div .paging span{font-size:17px; color:#333; margin:0 12px;}
+.rightArea > div .paging span em{color:#5569c8; font-size:20px; font-weight:500;}
+.rightArea .campusmap{padding-bottom:20px !important;}
+.rightArea .mapArea{width:100%; height:200px; padding:0 20px; box-sizing:border-box; margin-top:20px;}
+.rightArea .mapArea .map{width:100%; height:100%; border:1px solid #d8d8d8;}
+
+.event_search fieldset{position:relative; border:2px solid #5569c8; padding-right:25px; box-sizing:border-box; margin:10px 20px 5px 20px;}
+.event_search fieldset .inputbox{float:left; margin-right:5px;}
+.event_search fieldset input[type="text"]{float:left; border:none; width:100%;}
+.event_search fieldset .btn_search{position:absolute; top:7px; right:10px;}
+.event_search .btnArea{padding:0 20px; box-sizing:border-box; text-align:center;}
+
+.rightArea .mini_calendar{border-top:1px solid #d8d8d8; padding:10px 20px;}
+.rightArea .mini_calendar h5{background:none; border:none; text-align:center;  height:20px; line-height:20px;}
+.rightArea .mini_calendar h5 a img{margin-top:-3px;}
+.rightArea .mini_calendar h5 span{font-size:16px; color:#333; margin:0 12px;}
+.rightArea .mini_calendar h5 span em{color:#5569c8; font-weight:500;}
+.rightArea .mini_calendar table{width:100%;}
+.rightArea .mini_calendar table th{background-color:#e8ecff; color:#0f3e8e; font-size:12px; font-weight:500; height:24px; line-height:24px;}
+.rightArea .mini_calendar table td{border-bottom:1px solid #d8d8d8; font-size:12px; font-weight:500; height:20px; line-height:20px; font-weight:300;}
+.rightArea .mini_calendar table td span.today{border:2px solid #fd7d6b; width:100%; height:100%; color:#000; font-weight:400; display:inline-block;}
+
+
